@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <title>Isaac Lubanko</title>
+    
+        <!--Bootsrap css-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="assets/jquery/jquery-3.3.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!---->
+        <!--Other links-->
+        <!--<link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />-->
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    </head>
+
+<body>
+    <!--- HEADER CONTENT -->
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Isaac Lubanko</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">About</a></li>
+              <li class = "active"><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    <!--- END HEADER CONTENT -->    
+
+    <!--CONTAINER-->
+    <div class = "container-fluid">
+        <div class = "row">
+            
+            <!--I decided to keep the columns in their 2/3rds, and 1/3rd configuration on "smal screens" as well. That means it doesn't switch to each section taking up an entireity of the gird until the screen goes below 768px. This looks closer to the media query site and it keeps the main image form getting too big-->
+            <!--MAIN PAGE CONTENT:Portfolio-->
+
+            <div class = "col-md-8 col-sm-8 main-section-content">
+                <div class = "page-header">
+                    <h2>Portfolio</h2>
+                    <!--ROW 1-->
+                    <div class = "row">
+                    <div class = "col-md-6 ">
+                            <div class = "portfolio-item">
+                                <a href = "http://www.benthemoverguy.com" target = "_blank"><img class = "portfolio-image" src = "assets/images/benthemoverguy.jpg">
+                                    <span class = "label-background">
+                                        <h4 class = "portfolio-label">Ben the Mover Guy</h4>
+                                    </span>
+                                   </a>
+                            </div>
+                        </div>
+                        <div class = "col-md-6 ">
+                            <div class = "portfolio-item ">
+                                <a href = "http://www.spacewasterband.com" target = "_blank"><img class = "portfolio-image" src = "assets/images/spacewaster.jpg">
+                                    <span class = "label-background">
+                                        <h4 class = "portfolio-label">SpaceWaster</h4>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--ROW 2-->
+                    <div class = "row">
+                        <div class = "col-md-6 ">
+                            <div class = "portfolio-item">
+                                <a href = "https://rustinpeace91.github.io/hangman-game/" target = "_blank"><img class = "portfolio-image" src = "assets/images/minicooper.jpg">
+                                    <span class = "label-background">
+                                        <h4 class = "portfolio-label">Hangman</h4>
+                                    </span>
+                                   </a>
+                            </div>
+                        </div>
+                        <div class = "col-md-6 ">
+                            <div class = "portfolio-item ">
+                                <a href = "https://codepen.io/rustinpeace91/pen/KmzNdx" target = "_blank"><img class = "portfolio-image" src = "assets/images/capacitors.jpg">
+                                    <span class = "label-background">
+                                        <h4 class = "portfolio-label">Tax Calculator</h4>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--ROW 3-->
+                    <div class = "row">
+                        <div class = "col-md-6">
+                            <div class = "portfolio-item">
+                                <a href = "#"><img class = "portfolio-image" src = "assets/images/ants.jpg">
+                                    <span class = "label-background">
+                                        <h4 class = "portfolio-label">Gif Generator</h4>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class = "col-md-6">
+                            <div class = "portfolio-item ">
+                                <a href = "https://rustinpeace91.github.io/week-4-game-d20-edition/" target= "_blank"><img class = "portfolio-image" src = "assets/images/colors.jpg">
+                                    <span class = "label-background">
+                                        <h4 class = "portfolio-label">RPG Game</h4>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                    
+                <!--END MAIN PAGE CONTENT-->
+            </div>
+            <!--SIDEBAR-->
+ 
+            <div class = "col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1  sidebar">
+                
+                <div class = "row"> 
+                    <h3 class = "text-center">Connect with me</h3>
+                    <div class = "col-md-4 col-sm-4 col-xs-4"><a href="https://github.com/rustinpeace91" target = "_blank"><img class = "contact-images" src ="assets/images/githubsq.png"></a></div>
+                    <div class = "col-md-4 col-sm-4 col-xs-4"><a href="https://www.linkedin.com/in/isaac-lubanko-59972093/" target = "_blank"><img class = "contact-images" src ="assets/images/linkedinsq.png"></a></div>
+                    <div class = "col-md-4 col-sm-4 col-xs-4"><a href="https://stackoverflow.com/users/6182028/rustinpeace91" target = "_blank"><img class = "contact-images" src ="assets/images/stackoverflowsq.png"></a></div>
+
+
+                </div>
+
+            </div>
+            <!--END SIDEBAR-->
+        </div>
+    </div>
+
+            <!--MAIN PAGE CONTENT-->
+
+  
+    <!--FOOTER-->
+    <footer class="footer">
+            <div class="container">
+              <p class = "footer-text">©copyright 2018 Isaac Lubanko</p>
+            </div>
+    </footer>
+</body>
+</html>
