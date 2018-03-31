@@ -2,8 +2,14 @@
 <html>
 
 <head>
+    <meta property="og:site_name" content="Isaac Lubanko: Web Developer">
+		<meta property="og:url" content="http://www.isaaclubanko.com/">	
+		<meta property="og:image" content="assets/images/fbimage.jpg">
+		<meta property="og:title" content="Isaac Lubanko: Web Developer">
     <meta charset="utf-8" />
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+
     <title>Isaac Lubanko</title>
 
     <!--Bootsrap css-->
@@ -12,8 +18,10 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="assets/jquery/jquery-3.3.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <!---->
     <!--Other links-->
+    <script src = "assets/javascript/app.js"></script>
     <!--<link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />-->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
@@ -73,7 +81,7 @@
                             <img class = "img-responsive pull-left headshot" src = "assets/images/headshot-2.jpg">
                         </div>
                         <div class = "col-md-8 col-sm-8">
-                            <p>My name is Isaac Lubanko. I am an up and coming web developer living in West Philadelphia. I have been working on front end site building for 2 years now. I have some freelance work under my belt and am currently taking classes to become a full stack developer.</p>
+                            <p>My name is Isaac Lubanko. I am an up and coming web developer living in West Philadelphia. I have been working on front end site building for <span id = "years"></span> years now. I have some freelance work under my belt and am currently taking classes to become a full stack developer.</p>
                         </div>
                     </div>
                     <p>I got my start in Web Development while I was playing in my band, SpaceWaster. We were gigging professionally, traveling the country and trying to establish a prescence on social media.</p>
@@ -93,7 +101,7 @@
                         <h3 class = "text-center">Connect with me</h3>
                         <div class = "col-md-4 col-sm-4 col-xs-4"><a href="https://github.com/rustinpeace91" target = "_blank"><img class = "contact-images" src ="assets/images/githubsq.png"></a></div>
                         <div class = "col-md-4 col-sm-4 col-xs-4"><a href="https://www.linkedin.com/in/isaac-lubanko-59972093/" target = "_blank"><img class = "contact-images" src ="assets/images/linkedinsq.png"></a></div>
-                        <div class = "col-md-4 col-sm-4 col-xs-4"><a href="mailto:isaaclubanko@gmail.com" ><img class = "contact-images" src ="assets/images/Mail.png"></a></div>
+                        <div class = "col-md-4 col-sm-4 col-xs-4"><a href="mailto:isaaclubanko@gmail.com" ><img class = "contact-images" src ="assets/images/mail.jpg"></a></div>
                     </div>
 
             </div>
@@ -107,7 +115,7 @@
     <!--FOOTER-->
 
     <footer class="footer">
-              <p class = "footer-text">©copyright 2018 Isaac Lubanko</p>
+        <p class = "footer-text">©copyright <span id = "current-year"></span> Isaac Lubanko</p>
     </footer>
 
 </body>

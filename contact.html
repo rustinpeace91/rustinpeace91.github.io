@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name = "viewport" content = "width=device-width, initial-scale=1">
-        <title>Isaac Lubanko</title>
-    
-        <!--Bootsrap css-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="assets/jquery/jquery-3.3.1.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <!---->
-        <!--Other links-->
-        <!--<link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />-->
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    </head>
+<head>
+   <meta property="og:site_name" content="Isaac Lubanko: Web Developer">
+		<meta property="og:url" content="www.isaaclubanko.com">	
+		<meta property="og:image" content="assets/images/fbimage.jpg">
+		<meta property="og:title" content="Isaac Lubanko: Web Developer">
+    <meta charset="utf-8" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+
+    <title>Isaac Lubanko</title>
+
+    <!--Bootsrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="assets/jquery/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <!---->
+    <!--Other links-->
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+
 
 <body>
     <!--- HEADER CONTENT -->
@@ -55,20 +63,22 @@
             <div class = "col-md-8 col-sm-8 main-section-content">
                 <div class = "page-header">
                     <h2>Contact</h2>
+                    <p style = "margin-left:10px">Fill out the form below to forward to my email or click the email link in the sidebar</p>
                 </div>
                     <!--ROW 1-->
                    <div class = "col-md-12 col-s-12">
-                            <form id = "contact-form" action = "mailto:isaaclubanko@gmail.com">
+                            <form id = "contact-form" action = "https://formspree.io/isaaclubanko@gmail.com"
+                            method= "POST">
                                 <label>Name</label>
                                 <input type = "text" id = "name-form" name = "firstname" placeholder = "Your name here">
     
                                 <label>Email</label>
-                                <input type = "text" id = "email-form" name = "email" placeholder = "Your email here">
+                                <input type = "email" id = "email-form" name = "_replyto" placeholder = "Your email here">
                                 
                                 <label for="subject">Message</label>
                                 <textarea id="message" name="message" style="height:200px"></textarea>
     
-                                <input id = "submit-button" type="submit" value="Submit">
+                                <input id = "submit-button" type="submit" value="Send">
                             </form>
                     </div>
 
@@ -86,7 +96,7 @@
                         <h3 class = "text-center">Connect with me</h3>
                         <div class = "col-md-4 col-sm-4 col-xs-4"><a href="https://github.com/rustinpeace91" target = "_blank"><img class = "contact-images" src ="assets/images/githubsq.png"></a></div>
                         <div class = "col-md-4 col-sm-4 col-xs-4"><a href="https://www.linkedin.com/in/isaac-lubanko-59972093/" target = "_blank"><img class = "contact-images" src ="assets/images/linkedinsq.png"></a></div>
-                        <div class = "col-md-4 col-sm-4 col-xs-4"><a href="mailto:isaaclubanko@gmail.com" ><img class = "contact-images" src ="assets/images/Mail.png"></a></div>
+                        <div class = "col-md-4 col-sm-4 col-xs-4"><a href="mailto:isaaclubanko@gmail.com" ><img class = "contact-images" src ="assets/images/mail.jpg"></a></div>
 
 
                     </div>
@@ -102,7 +112,7 @@
     <!--FOOTER-->
     <footer class="footer">
             <div class="container">
-              <p class = "footer-text">©copyright 2018 Isaac Lubanko</p>
+                <p class = "footer-text">©copyright <span id = "current-year"></span> Isaac Lubanko</p>
             </div>
     </footer>
 </body>
